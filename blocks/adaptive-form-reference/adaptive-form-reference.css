@@ -1,0 +1,87 @@
+/* Base styling for the form container */
+form#dynamicForm {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+/* Style for all labels */
+form#dynamicForm label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Style for text input fields */
+form#dynamicForm input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the radio button group */
+form#dynamicForm .radio-group {
+    margin: 15px 0;
+}
+
+/* Individual radio button item */
+form#dynamicForm .radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* Style for radio buttons */
+form#dynamicForm input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style for the submit button */
+form#dynamicForm button {
+    width: 100%;
+    padding: 10px;
+    background: #ffea00;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form#dynamicForm button:hover {
+    background: #000000;
+    color: white;
+}
+
+
+form#dynamicForm .radio-item input {
+    width: auto;
+    margin-bottom: 0;
+}
+
+form#dynamicForm .radio-item label {
+    margin-top: 0;
+}
+
+.form-parent-container {
+    display: flex;
+    align-items: center; /* Vertically align the items */
+    gap: 20px; /* Add space between the form and image */
+}
+
+#dynamicForm {
+    flex: 1; /* Allow form to take up some space */
+}
+
+.form-image-container img {
+    width: 700px !important; /* Set a fixed width for the image */
+    height: auto;
+}

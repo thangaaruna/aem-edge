@@ -1,0 +1,141 @@
+
+
+
+.offer-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.banner-content {
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    background-color: #fff;
+    display: flex;
+}
+
+.banner-content p {
+  margin: 0;
+  position: relative;
+}
+
+@media (width >= 600px) {
+    .banner-content {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .banner1300x435 .banner-content {
+      width: 1300px;
+      height: 435px;
+    }
+
+}
+
+.banner-content .banner-detail {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 32px;
+    color: #fff;
+    position: relative;
+  }
+
+  .banner1300x435 .banner-content .banner-detail {
+    height: 435px;
+  }
+
+  @media (width >= 600px) {
+    .banner-content .banner-detail {
+        padding: 4% 5%;
+    }
+
+   .banner1300x435 .banner-content .banner-detail  {
+      padding: 150px 60px 60px;
+      height: 435px;
+  }
+}
+
+  .banner-content .banner-detail .headline {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 36px;
+    padding: 15px 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .banner1300x435 .banner-content .banner-detail .headline {
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0;
+  }
+
+  @media (width >= 600px) {
+    .banner1300x435 .banner-content .banner-detail .headline {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  } 
+
+  .banner-content .banner-detail .pretitle {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 10px 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .banner1300x435 .banner-content .banner-detail .pretitle {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .banner-content .banner-detail .detail {
+    font-size: 16px;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .banner1300x435 .banner-content .banner-detail .detail {
+    font-size: 18px;
+    line-height: 72px; }
+
+  .banner-content .banner-logo {
+    display: none;
+    }
+
+  @media (width >= 600px) {
+  .banner-content .banner-logo {
+    display: block;
+    width: 400px;
+    background-image: url("/icons/securbank_logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 191px 53px;
+  }
+
+  .banner-content .banner-detail::before {
+    content:"";
+    background-color: rgba(0,0,0,.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+
+
+}
+
